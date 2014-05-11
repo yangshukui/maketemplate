@@ -1,0 +1,4 @@
+maketemplate
+============
+
+Makefile template
