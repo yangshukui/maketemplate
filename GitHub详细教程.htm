@@ -1,0 +1,2107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+
+    <script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/46aae4d1e2371e4aa769798941cef698/allmobilize.min.js"></script>
+ <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+
+    <title>GitHub详细教程 - tbinjiayou
+        - 博客频道 - CSDN.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="GitHub详细教程Table of Contents1 Git详细教程1.1 Git简介1.1.1 Git是何方神圣?1.1.2 重要的术语1.1.3 索引1.2 Git安装1.3 Git配置1.3.1 用户信息1.3.2 高亮显示1.3.3 忽略特定的文件1.3.4 使用.gitkeep来追踪空的文件夹1.4 开始操作Git1" />
+    <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js?v=1.1"></script>
+        <!--new top-->
+               <link rel="stylesheet" href="http://static.csdn.net/public/common/toolbar/css/index.css">        <!--new top-->
+
+    <link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/light_blue/css/style.css?v=1.1" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/tangbin330/rss/list" />
+    <link rel="shortcut icon" href="http://csdnimg.cn/public/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/header.css" />
+ 
+
+
+</head>
+<body>
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="http://static.csdn.net/public/common/toolbar/js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/tangbin330">tbinjiayou</a></h2>
+            <h3>（授我以鱼，不如授我以渔）</h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+                <li id="btnContents"><a href="http://blog.csdn.net/tangbin330?viewmode=contents"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="http://static.blog.csdn.net/images/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/tangbin330?viewmode=list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="http://static.blog.csdn.net/images/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/tangbin330/rss/list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="http://static.blog.csdn.net/images/ico_rss.gif">订阅</span></a></li>                
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "tangbin330";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/tangbin330";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod='popu_3' > 
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/38514369"target="_blank">
+<font color=blue>7月推荐文章
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://download.csdn.net/album/detail/437">
+<font color=red>C++程序设计实践学材微课件</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://bbs.csdn.net/ask">
+<font color=blue>社区问答第九期：老罗的Android之旅
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://blog.csdn.net/blogdevteam/article/details/38657235"><font color=red>有奖试读&征文--当青春遇上互联网，能否点燃你的创业梦
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://blog.csdn.net/csdnproduct/article/details/38110573">
+<font color=blue>关注社区微信得下载分
+</font></a>
+
+
+</div>                        </div>
+                        
+
+  
+<link href="http://static.blog.csdn.net/css/comment1.css" type="text/css" rel="stylesheet" />
+<link href="http://static.blog.csdn.net/css/style1.css" type="text/css" rel="stylesheet" />
+<script language='JavaScript' type='text/javascript' src='http://download.csdn.net/js/jquery.cookie.js'></script>
+<script type="text/javascript" src="http://csdnimg.cn/rabbit/search-service/main.js"></script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Repost"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/tangbin330/article/details/9128765">
+        GitHub详细教程
+        </a></span>
+    </h1>
+</div>
+
+    <div class="article_manage">
+        <span class="link_categories">
+        分类：
+            <a href="/tangbin330/article/category/1361783" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">其他</a> 
+        </span>
+    <span class="link_postdate">2013-06-19 14:47</span>
+    <span class="link_view" title="阅读次数">36331人阅读</span>
+    <span class="link_comments" title="评论次数"><a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(35)</span>
+    <span class="link_collect"><a href="javascript:void(0);" onclick="javascript:_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shoucang']);collectArticle('GitHub详细教程','9128765');return false;" title="收藏">收藏</a></span>
+    <span class="link_report"><a href="#report"  onclick="javascript:_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_jubao']);report(9128765,2);return false;" title="举报">举报</a></span>
+    
+</div>
+
+  
+    
+<div id="article_content" class="article_content">
+
+<h1 class="title" style="margin:0px; padding:0px; text-align:center; font-family:Arial; line-height:26px">
+GitHub详细教程</h1>
+<div id="table-of-contents" style="font-family:Arial; font-size:14px; line-height:26px">
+<h2 style="margin:0px; padding:0px"><a name="t1" style="color:rgb(202,0,0)"></a><br>
+</h2>
+<h2 style="margin:0px; padding:0px"><a name="t2" style="color:rgb(202,0,0)"></a>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1" style="color:rgb(202,0,0); text-decoration:none">1 Git详细教程</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.1" style="color:rgb(202,0,0); text-decoration:none">1.1 Git简介</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.1.1" style="color:rgb(202,0,0); text-decoration:none">1.1.1 Git是何方神圣?</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.1.2" style="color:rgb(202,0,0); text-decoration:none">1.1.2 重要的术语</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.1.3" style="color:rgb(202,0,0); text-decoration:none">1.1.3 索引</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.2" style="color:rgb(202,0,0); text-decoration:none">1.2 Git安装</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.3" style="color:rgb(202,0,0); text-decoration:none">1.3 Git配置</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.3.1" style="color:rgb(202,0,0); text-decoration:none">1.3.1 用户信息</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.3.2" style="color:rgb(202,0,0); text-decoration:none">1.3.2 高亮显示</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.3.3" style="color:rgb(202,0,0); text-decoration:none">1.3.3 忽略特定的文件</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.3.4" style="color:rgb(202,0,0); text-decoration:none">1.3.4 使用.gitkeep来追踪空的文件夹</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4" style="color:rgb(202,0,0); text-decoration:none">1.4 开始操作Git</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.1" style="color:rgb(202,0,0); text-decoration:none">1.4.1 创建内容</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.2" style="color:rgb(202,0,0); text-decoration:none">1.4.2 创建仓库、添加文件和提交更改</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.3" style="color:rgb(202,0,0); text-decoration:none">1.4.3 diff命令与commit更改</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.4" style="color:rgb(202,0,0); text-decoration:none">1.4.4 Status, Diff 和 Commit Log</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.5" style="color:rgb(202,0,0); text-decoration:none">1.4.5 更正提交的信息 - git amend</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.6" style="color:rgb(202,0,0); text-decoration:none">1.4.6 删除文件</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5" style="color:rgb(202,0,0); text-decoration:none">1.5 远端仓库（remote repositories）</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.1" style="color:rgb(202,0,0); text-decoration:none">1.5.1 设置一个远端的Git仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.2" style="color:rgb(202,0,0); text-decoration:none">1.5.2 推送更改到其他的仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.3" style="color:rgb(202,0,0); text-decoration:none">1.5.3 添加远端仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.4" style="color:rgb(202,0,0); text-decoration:none">1.5.4 显示已有的远端仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.5" style="color:rgb(202,0,0); text-decoration:none">1.5.5 克隆仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.6" style="color:rgb(202,0,0); text-decoration:none">1.5.6 拉取（Pull）更改</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.7" style="color:rgb(202,0,0); text-decoration:none">1.5.7 还原更改</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.5.8" style="color:rgb(202,0,0); text-decoration:none">1.5.8 标记</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.6" style="color:rgb(202,0,0); text-decoration:none">1.6 分支、合并</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.6.1" style="color:rgb(202,0,0); text-decoration:none">1.6.1 分支</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.6.2" style="color:rgb(202,0,0); text-decoration:none">1.6.2 合并</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.6.3" style="color:rgb(202,0,0); text-decoration:none">1.6.3 删除分支</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.6.4" style="color:rgb(202,0,0); text-decoration:none">1.6.4 推送（push）一个分支到远端仓库</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.7" style="color:rgb(202,0,0); text-decoration:none">1.7 解决合并冲突</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.8" style="color:rgb(202,0,0); text-decoration:none">1.8 变基（Rebase）</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.8.1" style="color:rgb(202,0,0); text-decoration:none">1.8.1 在同一分支中应用Rebase Commit</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.8.2" style="color:rgb(202,0,0); text-decoration:none">1.8.2 Rebasing多个分支</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.8.3" style="color:rgb(202,0,0); text-decoration:none">1.8.3 Rebase最佳实践</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.8.4" style="color:rgb(202,0,0); text-decoration:none">1.8.4 创建和应用补丁</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.9" style="color:rgb(202,0,0); text-decoration:none">1.9 定义同名命令</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.10" style="color:rgb(202,0,0); text-decoration:none">1.10 放弃跟踪文件</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.11" style="color:rgb(202,0,0); text-decoration:none">1.11 其他有用的命令</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.12" style="color:rgb(202,0,0); text-decoration:none">1.12 安装Git服务</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.13" style="color:rgb(202,0,0); text-decoration:none">1.13 在线的远端仓库</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.13.1" style="color:rgb(202,0,0); text-decoration:none">1.13.1 克隆远端仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.13.2" style="color:rgb(202,0,0); text-decoration:none">1.13.2 添加远端仓库</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.13.3" style="color:rgb(202,0,0); text-decoration:none">1.13.3 通过http和代理服务器进行远端操作</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.14" style="color:rgb(202,0,0); text-decoration:none">1.14 Git服务提供商</a>
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.14.1" style="color:rgb(202,0,0); text-decoration:none">1.14.1 GitHub</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.14.2" style="color:rgb(202,0,0); text-decoration:none">1.14.2 Bitbucket</a></li></ul>
+</li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.15" style="color:rgb(202,0,0); text-decoration:none">1.15 Git的图形接口</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.16" style="color:rgb(202,0,0); text-decoration:none">1.16 Kindle版本教程</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.17" style="color:rgb(202,0,0); text-decoration:none">1.17 问题与讨论</a></li><li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.18" style="color:rgb(202,0,0); text-decoration:none">1.18 链接和文章</a></li></ul>
+</li></ul>
+</div>
+</div>
+<div id="outline-container-1" class="outline-2" style="font-family:Arial; font-size:14px; line-height:26px">
+<h2 id="sec-1" style="margin:0px; padding:0px"><a name="t3" style="color:rgb(202,0,0)"></a><span class="section-number-2"><br>
+</span></h2>
+<h2 id="sec-1" style="margin:0px; padding:0px"><a name="t4" style="color:rgb(202,0,0)"></a><span class="section-number-2">1</span>&nbsp;Git详细教程</h2>
+<div class="outline-text-2" id="text-1"></div>
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1" style="margin:0px; padding:0px"><a name="t5" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.1" style="margin:0px; padding:0px"><a name="t6" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.1</span>&nbsp;Git简介</h3>
+<div class="outline-text-3" id="text-1.1"></div>
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1" style="margin:0px; padding:0px"><a name="t7" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.1.1" style="margin:0px; padding:0px"><a name="t8" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.1.1</span>&nbsp;Git是何方神圣?</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.1.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git是用C语言开发的分布版本控制系统。版本控制系统可以保留一个文件集合的历史记录，并能回滚文件集合到另一个状态（历史记录状态）。另一个状态可以是不同的文件，也可以是不同的文件内容。举个例子，你可以将文件集合转换到两天之前的状态，或者你可以在生产代码和实验性质的代码之间进行切换。文件集合往往被称作是“源代码”。在一个分布版本控制系统中，每个人都有一份完整的源代码（包括源代码所有的历史记录信息），而且可以对这个本地的数据进行操作。分布版本控制系统不需要一个集中式的代码仓库。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+当你对本地的源代码进行了修改，你可以标注他们跟下一个版本相关（将他们加到index中），然后提交到仓库中来（commit）。Git保存了所有的版本信息，所以你可以转换你的源代码到任何的历史版本。你可以对本地的仓库进行代码的提交，然后与其他的仓库进行同步。你可以使用Git来进行仓库的克隆（clone）操作，完整的复制一个已有的仓库。仓库的所有者可以通过push操作（推送变更到别处的仓库）或者Pull操作（从别处的仓库拉取变更）来同步变更。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git支持分支功能（branch）。如果你想开发一个新的产品功能，你可以建立一个分支，对这个分支的进行修改，而不至于会影响到主支上的代码。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git提供了命令行工具；这个教程会使用命令行。你也可以找到图形工具，譬如与Eclipse配套的EGit工具，但是这些都不会在这个教程中进行描述。</p>
+</div>
+</div>
+<div id="outline-container-1.1.2" class="outline-4">
+<h4 id="sec-1.1.2" style="margin:0px; padding:0px"><a name="t9" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.1.2" style="margin:0px; padding:0px"><a name="t10" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.1.2</span>&nbsp;重要的术语</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.1.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<code>Git 术语</code></p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="border-collapse:collapse">
+<caption></caption><colgroup><col align="left"><col align="left"></colgroup>
+<thead>
+<tr>
+<th scope="col" style="vertical-align:top">术语</th>
+<th scope="col" style="vertical-align:top">定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">仓库</td>
+<td style="vertical-align:top">一个仓库包括了所有的版本信息、所有的分支和标记信息.</td>
+</tr>
+<tr>
+<td style="vertical-align:top">Repository</td>
+<td style="vertical-align:top">在Git中仓库的每份拷贝都是完整的。仓库让你可以从中</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">取得你的工作副本。</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">一个分支意味着一个独立的、拥有自己历史信息的代码线</td>
+</tr>
+<tr>
+<td style="vertical-align:top">分支</td>
+<td style="vertical-align:top">（code line）。你可以从已有的代码中生成一个新的分支</td>
+</tr>
+<tr>
+<td style="vertical-align:top">Branches</td>
+<td style="vertical-align:top">，这个分支与剩余的分支完全独立。默认的分支往往是叫</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">master。用户可以选择一个分支，选择一个分支叫做</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">checkout.</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">标记</td>
+<td style="vertical-align:top">一个标记指的是某个分支某个特定时间点的状态。通过标</td>
+</tr>
+<tr>
+<td style="vertical-align:top">Tags</td>
+<td style="vertical-align:top">记，可以很方便的切换到标记时的状态，例如2009年1月25</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">号在testing分支上的代码状态</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">提交</td>
+<td style="vertical-align:top">提交代码后，仓库会创建一个新的版本。这个版本可以在</td>
+</tr>
+<tr>
+<td style="vertical-align:top">Commit</td>
+<td style="vertical-align:top">后续被重新获得。每次提交都包括作者和提交者，作者和</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">提交者可以是不同的人</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">URL</td>
+<td style="vertical-align:top">URl用来标识一个仓库的位置</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">用来表示代码的一个版本状态。Git通过用SHA1 hash算法</td>
+</tr>
+<tr>
+<td style="vertical-align:top">修订</td>
+<td style="vertical-align:top">表示的id来标识不同的版本。每一个 SHA1 id都是160位长</td>
+</tr>
+<tr>
+<td style="vertical-align:top">Revision</td>
+<td style="vertical-align:top">,16进制标识的字符串.最新的版本可以通过HEAD来获取.</td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="vertical-align:top">之前的版本可以通过&quot;HEAD~1&quot;来获取，以此类推。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-1.1.3" class="outline-4">
+<h4 id="sec-1.1.3" style="margin:0px; padding:0px"><a name="t11" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.1.3" style="margin:0px; padding:0px"><a name="t12" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.1.3</span>&nbsp;索引</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.1.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git 需要将代码的变化显示的与下一次提交进行关联。举个例子，如果你对一个文件继续了修改，然后想将这些修改提交到下一次提交中，你必须将这个文件提交到索引中，通过git add file命令。这样索引可以保存所有变化的快照。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+新增的文件总是要显示的添加到索引中来。对于那些之前已经提交过的文件，可以在commit命令中使用-a 选项达到提交到索引的目的。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2" style="margin:0px; padding:0px"><a name="t13" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.2</span>&nbsp;Git安装</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在Ubuntu上，你可以通过apt来安装git命令行工具</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">sudo apt-get install git-core
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+对于其他的Linux版本，请查看相关的软件包安装工具使用方法。msysgit项目提供了Windows版本的Git，地址是<a href="http://code.google.com/p/msysgit/" style="color:rgb(202,0,0); text-decoration:none">http://code.google.com/p/msysgit/</a></p>
+</div>
+</div>
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3" style="margin:0px; padding:0px"><a name="t14" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.3" style="margin:0px; padding:0px"><a name="t15" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.3</span>&nbsp;Git配置</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+你可以在.gitconfig文件中防止git的全局配置。文件位于用户的home目录。上述已经提到每次提交都会保存作者和提交者的信息，这些信息都可以保存在全局配置中。后续将会介绍配置用户信息、高亮显示和忽略特定的文件。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1" style="margin:0px; padding:0px"><a name="t16" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.3.1</span>&nbsp;用户信息</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.3.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过如下命令来配置用户名和Email</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git config --global user.name &quot;Example Surname&quot;
+
+git config --global user.email &quot;your.email@gmail.com&quot;
+# Set default so that all changes are always pushed to the repository
+git config --global push.default &quot;matching&quot;
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+获取Git配置信息，执行以下命令：</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git config --list
+</pre></div>
+</div>
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2" style="margin:0px; padding:0px"><a name="t17" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.3.2" style="margin:0px; padding:0px"><a name="t18" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.3.2</span>&nbsp;高亮显示</h4>
+<div class="outline-text-4" id="text-1.3.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+以下命令会为终端配置高亮</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git config --global color.status auto
+git config --global color.branch auto
+</pre></div>
+</div>
+<div id="outline-container-1.3.3" class="outline-4">
+<h4 id="sec-1.3.3" style="margin:0px; padding:0px"><a name="t19" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.3.3" style="margin:0px; padding:0px"><a name="t20" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.3.3</span>&nbsp;忽略特定的文件</h4>
+<div class="outline-text-4" id="text-1.3.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+可以配置Git忽略特定的文件或者是文件夹。这些配置都放在.gitignore文件中。这个文件可以存在于不同的文件夹中，可以包含不同的文件匹配模式。为了让Git忽略bin文件夹，在主目录下放置.gitignore文件，其中内容为bin。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+同时Git也提供了全局的配置，core.excludesfile。</p>
+</div>
+</div>
+<div id="outline-container-1.3.4" class="outline-4">
+<h4 id="sec-1.3.4" style="margin:0px; padding:0px"><a name="t21" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.3.4" style="margin:0px; padding:0px"><a name="t22" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.3.4</span>&nbsp;使用.gitkeep来追踪空的文件夹</h4>
+<div class="outline-text-4" id="text-1.3.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git会忽略空的文件夹。如果你想版本控制包括空文件夹，根据惯例会在空文件夹下放置.gitkeep文件。其实对文件名没有特定的要求。一旦一个空文件夹下有文件后，这个文件夹就会在版本控制范围内。</p>
+</div>
+</div>
+</div>
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4" style="margin:0px; padding:0px"><a name="t23" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.4" style="margin:0px; padding:0px"><a name="t24" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.4</span>&nbsp;开始操作Git</h3>
+<div class="outline-text-3" id="text-1.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+后续将通过一个典型的Git工作流来学习。在这个过程中，你会创建一些文件、创建一个本地的Git仓库、提交你的文件到这个仓库中。这之后，你会克隆一个仓库、在仓库之间通过pull和push操作来交换代码的修改。注释（以#开头）解释了命令的具体含义，让我们打开命令行开始操作吧。</p>
+</div>
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1" style="margin:0px; padding:0px"><a name="t25" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.1" style="margin:0px; padding:0px"><a name="t26" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.1</span>&nbsp;创建内容</h4>
+<div class="outline-text-4" id="text-1.4.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面创建一些文件，它们会被放到版本控制之中</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">Switch to home
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~/
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Create a directory
+</span>mkdir ~/repo01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch into it
+</span><span style="color: rgb(176, 196, 222);">cd</span> repo01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Create a new directory
+</span>mkdir datafiles
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Create a few files
+</span>touch test01
+touch test02
+touch test03
+touch datafiles/data.txt
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Put a little text into the first file
+</span>ls &gt;test01
+</pre></div>
+</div>
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2" style="margin:0px; padding:0px"><a name="t27" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.2" style="margin:0px; padding:0px"><a name="t28" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.2</span>&nbsp;创建仓库、添加文件和提交更改</h4>
+<div class="outline-text-4" id="text-1.4.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+每个Git仓库都是放置在.git文件夹下.这个目录包含了仓库的所有历史记录，.git/config文件包含了仓库的本地配置。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+以下将会创建一个Git仓库，添加文件倒仓库的索引中，提交更改。</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Initialize the local Git repository
+</span>git init
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Add all (files and directories) to the Git repository
+</span>git add .
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Make a commit of your file to the local repository
+</span>git commit -m <span style="color: rgb(255, 160, 122);">&quot;Initial commit&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Show the log file
+</span>git log
+</pre></div>
+</div>
+<div id="outline-container-1.4.3" class="outline-4">
+<h4 id="sec-1.4.3" style="margin:0px; padding:0px"><a name="t29" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.3" style="margin:0px; padding:0px"><a name="t30" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.3</span>&nbsp;diff命令与commit更改</h4>
+<div class="outline-text-4" id="text-1.4.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过git diff命令，用户可以查看更改。通过改变一个文件的内容，看看gitdiff命令输出什么，然后提交这个更改到仓库中</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Make some changes to the file
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;This is a change&quot;</span> &gt; test01
+<span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;and this is another change&quot;</span> &gt; test02
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Check the changes via the diff command 
+</span>git diff
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Commit the changes, -a will commit changes for modified files
+</span><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">but will not add automatically new files
+</span>git commit -a -m <span style="color: rgb(255, 160, 122);">&quot;These are new changes&quot;</span>
+</pre></div>
+</div>
+<div id="outline-container-1.4.4" class="outline-4">
+<h4 id="sec-1.4.4" style="margin:0px; padding:0px"><a name="t31" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.4" style="margin:0px; padding:0px"><a name="t32" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.4</span>&nbsp;Status, Diff 和 Commit Log</h4>
+<div class="outline-text-4" id="text-1.4.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面会向你展示仓库现有的状态以及过往的提交历史</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Make some changes in the file
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;This is a new change&quot;</span> &gt; test01
+<span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;and this is another new change&quot;</span> &gt; test02
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">See the current status of your repository 
+</span><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">(which files are changed / new / deleted)
+</span>git status
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Show the differences between the uncommitted files 
+</span><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">and the last commit in the current branch
+</span>git diff
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Add the changes to the index and commit
+</span>git add . &amp;&amp; git commit -m <span style="color: rgb(255, 160, 122);">&quot;More chaanges - typo in the commit message&quot;</span>
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Show the history of commits in the current branch
+</span>git log
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">This starts a nice graphical view of the changes
+</span>gitk --all
+</pre></div>
+</div>
+<div id="outline-container-1.4.5" class="outline-4">
+<h4 id="sec-1.4.5" style="margin:0px; padding:0px"><a name="t33" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.5" style="margin:0px; padding:0px"><a name="t34" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.5</span>&nbsp;更正提交的信息 - git amend</h4>
+<div class="outline-text-4" id="text-1.4.5">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过git amend命令，我们可以修改最后提交的的信息。上述的提交信息中存在错误，下面会修改这个错误。</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git commit --amend -m &quot;More changes - now correct&quot;
+</pre></div>
+</div>
+<div id="outline-container-1.4.6" class="outline-4">
+<h4 id="sec-1.4.6" style="margin:0px; padding:0px"><a name="t35" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.4.6" style="margin:0px; padding:0px"><a name="t36" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.4.6</span>&nbsp;删除文件</h4>
+<div class="outline-text-4" id="text-1.4.6">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你删除了一个在版本控制之下的文件，那么使用git add .不会在索引中删除这个文件。需要通过带-a选项的git commit命令和-A选项的git add命令来完成</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Create a file and put it under version control
+</span>touch nonsense.txt
+git add . &amp;&amp; git commit -m <span style="color: rgb(255, 160, 122);">&quot;a new file has been created&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Remove the file
+</span>rm nonsense.txt
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Try standard way of committing -&gt; will not work 
+</span>git add . &amp;&amp; git commit -m <span style="color: rgb(255, 160, 122);">&quot;a new file has been created&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Now commit with the -a flag
+</span>git commit -a -m <span style="color: rgb(255, 160, 122);">&quot;File nonsense.txt is now removed&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Alternatively you could add deleted files to the staging index via
+</span>git add -A . 
+git commit -m <span style="color: rgb(255, 160, 122);">&quot;File nonsense.txt is now removed&quot;</span>
+</pre></div>
+</div>
+</div>
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5" style="margin:0px; padding:0px"><a name="t37" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.5" style="margin:0px; padding:0px"><a name="t38" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.5</span>&nbsp;远端仓库（remote repositories）</h3>
+<div class="outline-text-3" id="text-1.5"></div>
+<div id="outline-container-1.5.1" class="outline-4">
+<h4 id="sec-1.5.1" style="margin:0px; padding:0px"><a name="t39" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.1" style="margin:0px; padding:0px"><a name="t40" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.1</span>&nbsp;设置一个远端的Git仓库</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.5.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+我们将创建一个远端的Git仓库。这个仓库可以存储在本地或者是网络上。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+远端Git仓库和标准的Git仓库有如下差别：一个标准的Git仓库包括了源代码和历史信息记录。我们可以直接在这个基础上修改代码，因为它已经包含了一个工作副本。但是远端仓库没有包括工作副本，只包括了历史信息。可以使用–bare选项来创建一个这样的仓库。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+为了方便起见，示例中的仓库创建在本地文件系统上</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to the first repository
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~/repo01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">
+</span>git clone --bare . ../remote-repository.git
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Check the content, it is identical to the .git directory in repo01
+</span>ls ~/remote-repository.git
+</pre></div>
+</div>
+<div id="outline-container-1.5.2" class="outline-4">
+<h4 id="sec-1.5.2" style="margin:0px; padding:0px"><a name="t41" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.2" style="margin:0px; padding:0px"><a name="t42" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.2</span>&nbsp;推送更改到其他的仓库</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.5.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+做一些更改，然后将这些更改从你的第一个仓库推送到一个远端仓库&nbsp;</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+cd ~/repo01</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+echo &quot;Hello, hello. Turn your radio on&quot; &gt; test01echo &quot;Bye, bye. Turn your radio off&quot; &gt; test02</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+git commit -a -m &quot;Some changes&quot;</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+git push ../remote-repository.git</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+</div>
+<div id="outline-container-1.5.3" class="outline-4">
+<h4 id="sec-1.5.3" style="margin:0px; padding:0px"><a name="t43" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.3</span>&nbsp;添加远端仓库</h4>
+<div class="outline-text-4" id="text-1.5.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+除了通过完整的URL来访问Git仓库外，还可以通过git remote add命令为仓库添加一个短名称。当你克隆了一个仓库以后，origin表示所克隆的原始仓库。即使我们从零开始，这个名称也存在。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Add ../remote-repository.git with the name origin
+</span>git remote add origin ../remote-repository.git 
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Again some changes
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;I added a remote repo&quot;</span> &gt; test02
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Commit
+</span>git commit -a -m <span style="color: rgb(255, 160, 122);">&quot;This is a test for the new remote origin&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">If you do not label a repository it will push to origin
+</span>git push origin
+</pre></div>
+</div>
+<div id="outline-container-1.5.4" class="outline-4">
+<h4 id="sec-1.5.4" style="margin:0px; padding:0px"><a name="t44" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.4" style="margin:0px; padding:0px"><a name="t45" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.4</span>&nbsp;显示已有的远端仓库</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.5.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过以下命令查看已经存在的远端仓库</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Show the existing defined remote repositories
+git remote
+</pre></div>
+</div>
+<div id="outline-container-1.5.5" class="outline-4">
+<h4 id="sec-1.5.5" style="margin:0px; padding:0px"><a name="t46" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.5" style="margin:0px; padding:0px"><a name="t47" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.5</span>&nbsp;克隆仓库</h4>
+<div class="outline-text-4" id="text-1.5.5">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过以下命令在新的目录下创建一个新的仓库</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to home
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Make new directory
+</span>mkdir repo02
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to new directory
+</span>
+<span style="color: rgb(176, 196, 222);">cd</span> ~/repo02
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Clone
+</span>git clone ../remote-repository.git .
+</pre></div>
+</div>
+<div id="outline-container-1.5.6" class="outline-4">
+<h4 id="sec-1.5.6" style="margin:0px; padding:0px"><a name="t48" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.6" style="margin:0px; padding:0px"><a name="t49" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.6</span>&nbsp;拉取（Pull）更改</h4>
+<div class="outline-text-4" id="text-1.5.6">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过拉取，可以从其他的仓库中获取最新的更改。在第二个仓库中，做一些更改，然后将更改推送到远端的仓库中。然后第一个仓库拉取这些更改</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to home
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to second directory
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~/repo02
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Make changes
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;A change&quot;</span> &gt; test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Commit
+</span>git commit -a -m <span style="color: rgb(255, 160, 122);">&quot;A change&quot;</span>
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Push changes to remote repository
+</span><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Origin is automatically maintained as we cloned from this repository
+</span>git push origin
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Switch to the first repository and pull in the changes
+</span><span style="color: rgb(176, 196, 222);">cd</span> ~/repo01
+git pull ../remote-repository.git/
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Check the changes
+</span>less test01
+</pre></div>
+</div>
+<div id="outline-container-1.5.7" class="outline-4">
+<h4 id="sec-1.5.7" style="margin:0px; padding:0px"><a name="t50" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.7" style="margin:0px; padding:0px"><a name="t51" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.7</span>&nbsp;还原更改</h4>
+<div class="outline-text-4" id="text-1.5.7">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果在你的工作副本中，你创建了不想被提交的文件，你可以丢弃它。</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Create a new file with content
+touch test04
+echo &quot;this is trash&quot; &gt; test04
+
+# Make a dry-run to see what would happen
+# -n is the same as --dry-run 
+git clean -n
+
+# Now delete
+git clean -f
+
+你可以提取老版本的代码，通过提交的ID。git log命令可以查看提交ID 
+
+# Switch to home
+cd ~/repo01
+# Get the log
+git log
+
+# Copy one of the older commits and checkout the older revision via  译者注：checkout 后加commit id就是把commit的内容复制到index和工作副本中 
+git checkout commit_name
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你还未把更改加入到索引中，你也可以直接还原所有的更改</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">Some nonsense change
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;nonsense change&quot;</span> &gt; test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Not added to the staging index. Therefore we can 
+</span><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">just checkout the old version
+</span><span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">译者注：checkout后如果没有commit id号，就是从index中拷贝数据到工作副本，不涉及commit部分的改变
+</span>git checkout test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Check the result
+</span>cat test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Another nonsense change
+</span><span style="color: rgb(176, 196, 222);">echo</span> <span style="color: rgb(255, 160, 122);">&quot;another nonsense change&quot;</span> &gt; test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">We add the file to the staging index
+</span>git add test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Restore the file in the staging index
+</span><span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">译者注：复制HEAD所指commit的test01文件到index中
+</span>git reset HEAD test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Get the old version from the staging index
+</span><span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">译者注：复制index中test01到工作副本中
+</span>git checkout test01
+<span style="color: rgb(255, 127, 36);">#</span><span style="color: rgb(255, 127, 36);">译者注，以上两条命令可以合并为git checkout HEAD test01
+</span>
+也可以通过revert命令进行还原操作 
+
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Revert a commit
+</span>git revert commit_name
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+即使你删除了一个未添加到索引和提交的文件，你也可以还原出这个文件</p>
+<pre class="src src-sh" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"><span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Delete a file
+</span>rm test01
+<span style="color: rgb(255, 127, 36);"># </span><span style="color: rgb(255, 127, 36);">Revert the deletion
+</span>git checkout test01
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你已经添加一个文件到索引中，但是未提交。可以通过git resetfile 命令将这个文件从索引中删除</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">// Create a file
+touch incorrect.txt
+// Accidently add it to the index
+git add .
+// Remove it from the index
+git reset incorrect.txt
+// Delete the file
+rm incorrect.txt
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你删除了文件夹且尚未提交，可以通过以下命令来恢复这个文件夹 。译者注：即使已经提交，也可以还原</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git checkout HEAD -- your_dir_to_restore
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+译者注：checkout和reset这两个命令的含义是不同的，可以参阅这篇文章<a href="http://marklodato.github.com/visual-git-guide/index-en.html" style="color:rgb(202,0,0); text-decoration:none">http://marklodato.github.com/visual-git-guide/index-en.html</a></p>
+</div>
+</div>
+<div id="outline-container-1.5.8" class="outline-4">
+<h4 id="sec-1.5.8" style="margin:0px; padding:0px"><a name="t52" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.5.8" style="margin:0px; padding:0px"><a name="t53" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.5.8</span>&nbsp;标记</h4>
+<div class="outline-text-4" id="text-1.5.8">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git可以使用对历史记录中的任一版本进行标记。这样在后续的版本中就能轻松的找到。一般来说，被用来标记某个发行的版本。可以通过git tag命令列出所有的标记，通过如下命令来创建一个标记和恢复到一个标记</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git tag version1.6 -m 'version 1.6'      
+git checkout &lt;tag_name&gt;
+</pre></div>
+</div>
+</div>
+<div id="outline-container-1.6" class="outline-3">
+<h3 id="sec-1.6" style="margin:0px; padding:0px"><a name="t54" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.6" style="margin:0px; padding:0px"><a name="t55" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.6</span>&nbsp;分支、合并</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.6"></div>
+<div id="outline-container-1.6.1" class="outline-4">
+<h4 id="sec-1.6.1" style="margin:0px; padding:0px"><a name="t56" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.6.1</span>&nbsp;分支</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.6.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过分支，可以创造独立的代码副本。默认的分支叫master。Git消耗很少的资源就能创建分支。Git鼓励开发人员多使用分支</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面的命令列出了所有的本地分支，当前所在的分支前带有*号</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git branch 
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你还想看到远端仓库的分支，可以使用下面的命令</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git branch -a
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+可以通过下面的命令来创建一个新的分支</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Syntax: git branch &lt;name&gt; &lt;hash&gt;
+# &lt;hash&gt; in the above is optional 
+# if not specified the last commit will be used
+# If specified the corresponding commit will be used
+git branch testing
+# Switch to your new branch
+git checkout testing
+# Some changes
+echo &quot;Cool new feature in this branch&quot; &gt; test01
+git commit -a -m &quot;new feature&quot;
+# Switch to the master branch
+git checkout master
+# Check that the content of test01 is the old one
+cat test01
+</pre></div>
+</div>
+<div id="outline-container-1.6.2" class="outline-4">
+<h4 id="sec-1.6.2" style="margin:0px; padding:0px"><a name="t57" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.6.2" style="margin:0px; padding:0px"><a name="t58" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.6.2</span>&nbsp;合并</h4>
+<div class="outline-text-4" id="text-1.6.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过Merge我们可以合并两个不同分支的结果。Merge通过所谓的三路合并来完成。分别来自两个分支的最新commit和两个分支的最新公共commit.可以通过如下的命令进行合并</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Syntax: git merge &lt;branch-name&gt;
+git merge testing
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+一旦合并发生了冲突，Git会标志出来，开发人员需要手工的去解决这些冲突。解决冲突以后，就可以将文件添加到索引中，然后提交更改</p>
+</div>
+</div>
+<div id="outline-container-1.6.3" class="outline-4">
+<h4 id="sec-1.6.3" style="margin:0px; padding:0px"><a name="t59" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.6.3" style="margin:0px; padding:0px"><a name="t60" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.6.3</span>&nbsp;删除分支</h4>
+<div class="outline-text-4" id="text-1.6.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+删除分支的命令如下：</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">#Delete branch testing
+git branch -d testing
+# Check if branch has been deleted
+git branch
+</pre></div>
+</div>
+<div id="outline-container-1.6.4" class="outline-4">
+<h4 id="sec-1.6.4" style="margin:0px; padding:0px"><a name="t61" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.6.4" style="margin:0px; padding:0px"><a name="t62" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.6.4</span>&nbsp;推送（push）一个分支到远端仓库</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.6.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+默认的，Git只会推送匹配的分支的远端仓库。这意味在使用git push命令默认推送你的分支之前，需要手工的推送一次这个分支。</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Push testing branch to remote repository
+git push origin testing
+
+# Switch to the testing branch
+git checkout testing
+
+# Some changes
+echo &quot;News for you&quot; &gt; test01
+git commit -a -m &quot;new feature in branch&quot;
+
+# Push all including branch
+git push
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过这种方式，你可以确定哪些分支对于其他仓库是可见的，而哪些只是本地的分支</p>
+</div>
+</div>
+</div>
+<div id="outline-container-1.7" class="outline-3">
+<h3 id="sec-1.7" style="margin:0px; padding:0px"><a name="t63" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.7" style="margin:0px; padding:0px"><a name="t64" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.7</span>&nbsp;解决合并冲突</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.7">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果两个不同的开发人员对同一个文件进行了修改，那么合并冲突就会发生。而Git没有智能到自动解决合并两个修改。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在这一节中，我们会首先制造一个合并冲突，然后解决它，并应用到Git仓库中。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面会产生一个合并冲突</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Switch to the first directory
+cd ~/repo01
+# Make changes
+touch mergeconflict.txt
+echo &quot;Change in the first repository&quot; &gt; mergeconflict.txt
+# Stage and commit
+git add . &amp;&amp; git commit -a -m &quot;Will create merge conflict 1&quot;
+
+# Switch to the second directory
+cd ~/repo02
+# Make changes
+touch mergeconflict.txt
+echo &quot;Change in the second repository&quot; &gt; mergeconflict.txt
+# Stage and commit
+git add . &amp;&amp; git commit -a -m &quot;Will create merge conflict 2&quot;
+# Push to the master repository
+git push
+
+# Now try to push from the first directory
+# Switch to the first directory
+cd ~/repo01
+# Try to push --&gt; you will get an error message
+git push
+# Get the changes
+git pull origin master
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git将冲突放在收到影响的文件中，文件内容如下：</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Change in the first repository
+=======
+Change in the second repository
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; b29196692f5ebfd10d8a9ca1911c8b08127c85f8
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+上面部分是你的本地仓库，下面部分是远端仓库。现在编辑这个文件，然后commit更改。另外的，你可以使用git mergetool命令</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Either edit the file manually or use 
+git mergetool
+# You will be prompted to select which merge tool you want to use
+# For example on Ubuntu you can use the tool &quot;meld&quot;
+# After  merging the changes manually, commit them
+git commit -m &quot;merged changes&quot;
+</pre></div>
+</div>
+<div id="outline-container-1.8" class="outline-3">
+<h3 id="sec-1.8" style="margin:0px; padding:0px"><a name="t65" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.8" style="margin:0px; padding:0px"><a name="t66" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.8</span>&nbsp;变基（Rebase）</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.8"></div>
+<div id="outline-container-1.8.1" class="outline-4">
+<h4 id="sec-1.8.1" style="margin:0px; padding:0px"><a name="t67" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.8.1</span>&nbsp;在同一分支中应用Rebase Commit</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.8.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+通过rebase命令可以合并多个commit为一个。这样用户push更改到远端仓库的时候就可以先修改commit历史</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+接下来我们将创建多个commit，然后再将它们rebase成一个commit</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Create a new file
+touch rebase.txt
+
+# Add it to git
+git add . &amp;&amp; git commit -m &quot;rebase.txt added to index&quot;
+
+# Do some silly changes and commit
+echo &quot;content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added content&quot;
+echo &quot; more content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added more content&quot;
+echo &quot; more content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added more content&quot;
+echo &quot; more content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added more content&quot;
+echo &quot; more content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added more content&quot;
+echo &quot; more content&quot; &gt;&gt; rebase.txt
+git add . &amp;&amp; git commit -m &quot;added more content&quot;
+
+# Check the git log message
+git log
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+我们合并最后的七个commit。你可以通过如下的命令交互的完成</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git rebase -i HEAD~7
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+这个命令会打开编辑器让你修改commit的信息或者 squash/ fixup最后一个信息.Squash会合并commit信息而fixup会忽略commit信息（待理解）</p>
+</div>
+</div>
+<div id="outline-container-1.8.2" class="outline-4">
+<h4 id="sec-1.8.2" style="margin:0px; padding:0px"><a name="t68" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.8.2</span>&nbsp;Rebasing多个分支</h4>
+<div class="outline-text-4" id="text-1.8.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+你也可以对两个分支进行rebase操作。如下所述，merge命令合并两个分支的更改。rebase命令为一个分支的更改生成一个补丁，然后应用这个补丁到另一分支中</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+使用merge和rebase，最后的源代码是一样的，但是使用rebase产生的commit历史更加的少，而且历史记录看上去更加的线性</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Create new branch 
+git branch testing
+# Checkout the branch
+git checkout testing
+# Make some changes
+echo &quot;This will be rebased to master&quot; &gt; test01
+# Commit into testing branch
+git commit -a -m &quot;New feature in branch&quot;
+# Rebase the master
+git rebase master
+</pre></div>
+</div>
+<div id="outline-container-1.8.3" class="outline-4">
+<h4 id="sec-1.8.3" style="margin:0px; padding:0px"><a name="t69" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.8.3" style="margin:0px; padding:0px"><a name="t70" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.8.3</span>&nbsp;Rebase最佳实践</h4>
+<div class="outline-text-4" id="text-1.8.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在push更改到其他的Git仓库之前，我们需要仔细检查本地分支的commit历史</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在Git中，你可以使用本地的commit。开发人员可以利用这个功能方便的回滚本地的开发历史。但是在push之前，需要观察你的本地分支历史，是否其中有些commit历史对其他用户来说是无关的</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果所有的commit历史都跟同一个功能有关，很多情况下，你需要rebase这些commit历史为一个commit历史。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+交互性的rebase主要就是做重写commit历史的任务。这样做是安全的，因为commit还没有被push到其它的仓库。这意味着commit历史只有在被push之前被修改。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你修改然后push了一个已经在目标仓库中存在的commit历史，这看起来就像是你实现了一些别人已经实现的功能</p>
+</div>
+</div>
+<div id="outline-container-1.8.4" class="outline-4">
+<h4 id="sec-1.8.4" style="margin:0px; padding:0px"><a name="t71" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.8.4" style="margin:0px; padding:0px"><a name="t72" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.8.4</span>&nbsp;创建和应用补丁</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.8.4">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+一个补丁指的是一个包含对源代码进行修改的文本文件。你可以将这个文件发送给某人，然后他就可以应用这个补丁到他的本地仓库。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面会创建一个分支，对这个分支所一些修改，然后创建一个补丁，并应用这个补丁到master分支</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Create a new branch
+git branch mybranch
+# Use this new branch
+git checkout mybranch
+# Make some changes
+touch test05
+# Change some content in an existing file
+echo &quot;New content for test01&quot; &gt;test01
+# Commit this to the branch
+git add .
+git commit -a -m &quot;First commit in the branch&quot;
+
+# Create a patch --&gt; git format-patch master
+git format-patch origin/master
+# This created patch 0001-First-commit-in-the-branch.patch
+
+# Switch to the master
+git checkout master
+
+# Apply the patch
+git apply 0001-First-commit-in-the-branch.patch
+# Do your normal commit in the master 
+git add .
+git commit -a -m &quot;Applied patch&quot;
+
+# Delete the patch 
+rm 0001-First-commit-in-the-branch.patch
+
+</pre></div>
+</div>
+</div>
+<div id="outline-container-1.9" class="outline-3">
+<h3 id="sec-1.9" style="margin:0px; padding:0px"><a name="t73" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.9" style="margin:0px; padding:0px"><a name="t74" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.9</span>&nbsp;定义同名命令</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.9">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git允许你设定你自己的Git命令。你可以给你自己常用的命令起一个缩写命令，或者合并几条命令道一个命令上来。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面的例子中，定义了git add-commit 命令，这个命令合并了git add . -A 和git commit -m 命令。定义这个命令后，就可以使用git add-commit -m&quot;message&quot; 了.</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git config --global alias.add-commit '!git add . -A &amp;&amp; git commit'
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+但是非常不幸，截止写这篇文章之前，定义同名命令在msysGit中还没有支持。同名命令不能以！开始。</p>
+</div>
+</div>
+<div id="outline-container-1.10" class="outline-3">
+<h3 id="sec-1.10" style="margin:0px; padding:0px"><a name="t75" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.10" style="margin:0px; padding:0px"><a name="t76" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.10</span>&nbsp;放弃跟踪文件</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.10">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+有时候，你不希望某些文件或者文件夹被包含在Git仓库中。但是如果你把它们加到.gitignore文件中以后，Git会停止跟踪这个文件。但是它不会将这个文件从仓库中删除。这导致了文件或者文件夹的最后一个版本还是存在于仓库中。为了取消跟踪这些文件或者文件夹，你可以使用如下的命令</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Remove directory .metadata from git repo
+git rm -r --cached .metadata
+# Remove file test.txt from repo
+git rm --cached test.txt
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+这样做不会将这些文件从commit历史中去掉。如果你想将这些文件从commit历史中去掉，可以参考git filter-branch命令</p>
+</div>
+</div>
+<div id="outline-container-1.11" class="outline-3">
+<h3 id="sec-1.11" style="margin:0px; padding:0px"><a name="t77" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.11" style="margin:0px; padding:0px"><a name="t78" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.11</span>&nbsp;其他有用的命令</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.11">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面列出了在日常工作中非常有用的Git命令</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<code>有用的Git命令</code></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<code><br>
+</code></p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="border-collapse:collapse">
+<caption></caption><colgroup><col align="left"><col align="left"></colgroup>
+<thead>
+<tr>
+<th scope="col" style="vertical-align:top">命令</th>
+<th scope="col" style="vertical-align:top">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">git blame filename</td>
+<td style="vertical-align:top">谁创建了或者是修改了这个文件</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="vertical-align:top">git checkout -b mybranch</td>
+<td style="vertical-align:top">以上上个commit信息为起点，创建一条</td>
+</tr>
+<tr>
+<td style="vertical-align:top">master~1</td>
+<td style="vertical-align:top">新的分支</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-1.12" class="outline-3">
+<h3 id="sec-1.12" style="margin:0px; padding:0px"><a name="t79" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.12" style="margin:0px; padding:0px"><a name="t80" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.12</span>&nbsp;安装Git服务</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.12">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如上所述，我们的操作不需要Git服务。我可以只使用文件系统或者是Git仓库的提供者，像Github或Bitbucket。但是，有时候，拥有一个自己的服务是比较方便的，在ubuntu下安装一个服务相对来说是比较容易的</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+确定你已经安装了ssh</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">apt-get install ssh
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你还没有安装Git服务，安装它</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">sudo apt-get install git-core
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+添加一个名为git的用户</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">sudo adduser git
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+然后使用git用户进行登陆，创建一个空的仓库</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Login to server
+# to test use localhost
+ssh git@IP_ADDRESS_OF_SERVER
+
+# Create repository
+git init --bare example.git
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+现在你就可以向远端的仓库提交变更了</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">mkdir gitexample
+cd gitexample
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@IP_ADDRESS_OF_SERVER:example.git
+git push origin master
+</pre></div>
+</div>
+<div id="outline-container-1.13" class="outline-3">
+<h3 id="sec-1.13" style="margin:0px; padding:0px"><a name="t81" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.13" style="margin:0px; padding:0px"><a name="t82" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.13</span>&nbsp;在线的远端仓库</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.13"></div>
+<div id="outline-container-1.13.1" class="outline-4">
+<h4 id="sec-1.13.1" style="margin:0px; padding:0px"><a name="t83" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.13.1</span>&nbsp;克隆远端仓库</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.13.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git支持远端的操作。Git支持多种的传输类型，Git自带的协议就叫做git。下面的的命令通过git协议从克隆一个仓库</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">git clone git@github.com:vogella/gitbook.git
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+同样的，你可以通过http协议来克隆仓库</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># The following will clone via HTTP 
+git clone http://vogella@github.com/vogella/gitbook.git
+</pre></div>
+</div>
+<div id="outline-container-1.13.2" class="outline-4">
+<h4 id="sec-1.13.2" style="margin:0px; padding:0px"><a name="t84" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.13.2" style="margin:0px; padding:0px"><a name="t85" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.13.2</span>&nbsp;添加远端仓库</h4>
+<div class="outline-text-4" id="text-1.13.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你克隆了一个远端仓库，那么原先的仓库就叫做origin</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+你可以push修改到origin中，通过 git push origin 命令. 当然，push到一个远端的仓库需要对仓库的写权限</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+你可以通过git remote add name gitrepo 命令添加多个仓库。例如，你可以通过http协议再次添加之前clone过来的仓库:</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">// Add the https protocol 
+git remote add githttp https://vogella@github.com/vogella/gitbook.git
+</pre></div>
+</div>
+<div id="outline-container-1.13.3" class="outline-4">
+<h4 id="sec-1.13.3" style="margin:0px; padding:0px"><a name="t86" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.13.3" style="margin:0px; padding:0px"><a name="t87" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.13.3</span>&nbsp;通过http和代理服务器进行远端操作</h4>
+<div class="outline-text-4" id="text-1.13.3">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+如果你的防火墙屏蔽了出http以外的所有协议，那么使用http协议来获取仓库是非常好的方法。.</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git同样支持通过代理服务器使用http协议。下面的Git命令会展示这一点。你可以为所有的程序设置代理服务器或者只是为Git服务提供。</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面的例子用到了环境变量</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;"># Linux
+export http_proxy=http://proxy:8080
+# On Windows
+# Set http_proxy=http://proxy:8080 
+git clone http://dev.eclipse.org/git/org.eclipse.jface/org.eclipse.jface.snippets.git
+# Push back to the origin using http
+git push origin
+</pre>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+下面的例子只是用到了Git的配置</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">// Set proxy for git globally
+ git config --global http.proxy http://proxy:8080
+// To check the proxy settings
+git config --get http.proxy
+// Just in case you need to you can also revoke the proxy settings
+git config --global --unset http.proxy
+</pre></div>
+</div>
+</div>
+<div id="outline-container-1.14" class="outline-3">
+<h3 id="sec-1.14" style="margin:0px; padding:0px"><a name="t88" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.14" style="margin:0px; padding:0px"><a name="t89" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.14</span>&nbsp;Git服务提供商</h3>
+<div class="outline-text-3" id="text-1.14">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+除了假设自己的服务，你也可以使用Git服务提供商提供的服务。最流行的Git服务提供网站是GitHub和Bitbucket。它们都提供了有限制的免费服务</p>
+</div>
+<div id="outline-container-1.14.1" class="outline-4">
+<h4 id="sec-1.14.1" style="margin:0px; padding:0px"><a name="t90" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.14.1" style="margin:0px; padding:0px"><a name="t91" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.14.1</span>&nbsp;GitHub</h4>
+<div class="outline-text-4" id="text-1.14.1">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+可以通过&nbsp;<a href="https://github.com/" style="color:rgb(202,0,0); text-decoration:none">https://github.com/</a>&nbsp;访问GitHub. GitHub上所有的公开仓库都是免费的。如果你想在上面使用私有的仓库，那么就需要付费给GitHub</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+GitHub需要你创建ssh的公钥私钥。生成一份Ubuntu的公钥私钥可以访问 sshkey creation in Ubuntu ，Windows环境可以访问msysgit ssh key generation.</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在GitHub上创建一个账户和一个仓库以后。你会收到如何将你的项目上传到GitHUb的指南，其中的命令大致如下：</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<pre class="example" name="code" style="white-space: pre-wrap; word-wrap: break-word; border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier, monospace; font-size: 13px; overflow: auto;">Global setup:
+ Set up git
+  git config --global user.name &quot;Your Name&quot;
+  git config --global user.email your.email@gmail.com
+      
+Next steps:
+  mkdir gitbook 
+  cd gitbook
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:vogella/gitbook.git
+  git push -u origin master
+      
+Existing Git Repo?
+  cd existing_git_repo
+  git remote add origin git@github.com:vogella/gitbook.git
+  git push -u origin master
+</pre></div>
+</div>
+<div id="outline-container-1.14.2" class="outline-4">
+<h4 id="sec-1.14.2" style="margin:0px; padding:0px"><a name="t92" style="color:rgb(202,0,0)"></a><span class="section-number-4"><br>
+</span></h4>
+<h4 id="sec-1.14.2" style="margin:0px; padding:0px"><a name="t93" style="color:rgb(202,0,0)"></a><span class="section-number-4">1.14.2</span>&nbsp;Bitbucket</h4>
+<div><br>
+</div>
+<div class="outline-text-4" id="text-1.14.2">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+可以通过&nbsp;<a href="https://bitbucket.org/" style="color:rgb(202,0,0); text-decoration:none">https://bitbucket.org/</a>&nbsp;访问Bitbucket. Bitbucket 提供了无限制了公共仓库和只能有五个人访问的私有仓库。如果你需要超过五个人访问私有仓库，就需要付费给Bitbucket</p>
+</div>
+</div>
+</div>
+<div id="outline-container-1.15" class="outline-3">
+<h3 id="sec-1.15" style="margin:0px; padding:0px"><a name="t94" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.15" style="margin:0px; padding:0px"><a name="t95" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.15</span>&nbsp;Git的图形接口</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.15">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+这个教程主要说明Git命令行的使用。完成了这个教程以后，你可能想要找到一个Git的图形工具</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git提供了两个图形工具。 gitk能够展示仓库的历史信息、git gui 让你可以通过编辑器来完成Git操作</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Eclipse EGit 项目提供了Git与Eclipse的集成，在最新的Eclipse版本中可以找到</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+</div>
+<div id="outline-container-1.16" class="outline-3">
+<h3 id="sec-1.16" style="margin:0px; padding:0px"><a name="t96" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.16</span>&nbsp;Kindle版本教程</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.16">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+这个教程提供了Kindle版本</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Kindle Edition</p>
+</div>
+</div>
+<div id="outline-container-1.17" class="outline-3">
+<h3 id="sec-1.17" style="margin:0px; padding:0px"><a name="t97" style="color:rgb(202,0,0)"></a><span class="section-number-3"><br>
+</span></h3>
+<h3 id="sec-1.17" style="margin:0px; padding:0px"><a name="t98" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.17</span>&nbsp;问题与讨论</h3>
+<div><br>
+</div>
+<div class="outline-text-3" id="text-1.17">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+在提出问题之前，请先查看 vogella FAQ. 如果你有任何的问题或者是从文章中找到错误，那么可以使用www.vogella.com Google Group. 我自己写了一个简短的列表 how to create good questions 可能会对你有用.</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+</div>
+<div id="outline-container-1.18" class="outline-3">
+<h3 id="sec-1.18" style="margin:0px; padding:0px"><a name="t99" style="color:rgb(202,0,0)"></a><span class="section-number-3">1.18</span>&nbsp;链接和文章</h3>
+<div>
+<p><span style="font-family:Helvetica,arial,freesans,clean,sans-serif"><span style="line-height:20px">1.<a href="http://download.csdn.net/detail/tangbin330/5625037">Git相关学习资源</a></span></span></p>
+<br>
+</div>
+<div class="outline-text-3" id="text-1.18">
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Git homepage</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+EGit - Teamprovider for Eclipse</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Video with Linus Torwalds on Git</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Progit book - Free Git book</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Video casts about Git</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<a href="http://code.google.com/p/msysgit/" style="color:rgb(202,0,0); text-decoration:none">http://code.google.com/p/msysgit/</a>&nbsp;Git on Windows</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<a href="http://github.com/guides/git-cheat-sheet" style="color:rgb(202,0,0); text-decoration:none">http://github.com/guides/git-cheat-sheet</a>&nbsp;Git Cheat Sheets</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+<br>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" style="font-family:Arial; font-size:14px; line-height:26px">
+<p class="author" style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Author: hic<a href="mailto:lishuo.os.ds@gmail.com" style="color:rgb(202,0,0); text-decoration:none">&lt;lishuo.os.ds@gmail.com&gt;</a></p>
+<p class="date" style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+Date: 2012-08-26 日</p>
+<p class="creator" style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px">
+HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+<div class="bdsharebuttonbox" style="float: right;">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"  style="background-position:0 -52px !important"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"style="background-position:0 -104px !important"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"style="background-position:0 -260px !important"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"style="background-position:0 -208px !important"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"style="background-position:0 -1612px !important" ></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+<!--192.168.100.35-->
+<ul class="article_next_prev">
+            <li class="prev_article"><span  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/tangbin330/article/details/9127467';">上一篇</span><a href="/tangbin330/article/details/9127467" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian'])">使用gist管理代码</a></li>
+            <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/tangbin330/article/details/9132329';">下一篇</span><a href="/tangbin330/article/details/9132329" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">php扩展安装mbstring</a></li>
+</ul>
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+
+</div>
+      <dl class="blog-associat-tag">
+        <dt>主题推荐</dt>
+        <dd>
+                <a href="http://www.csdn.net/tag/github" target="_blank" class="blog-tage-red" >github</a> 
+                <a href="http://www.csdn.net/tag/版本控制系统" target="_blank" class="blog-tage-red" >版本控制系统</a> 
+                <a href="http://www.csdn.net/tag/http协议" target="_blank" class="blog-tage-red" >http协议</a> 
+                <a href="http://www.csdn.net/tag/代理服务器" target="_blank" class="blog-tage-red" >代理服务器</a> 
+                <a href="http://www.csdn.net/tag/版本控制" target="_blank" class="blog-tage-red" >版本控制</a> 
+        </dd>
+    </dl> 
+
+
+<dl class="blog-ass-articl tracking-ad"  data-mod="popu_36" id="res-relatived"> 
+     <dt><span>猜你在找</span></dt>    
+</dl>
+
+<script type="text/javascript">
+    var searchtitletags = 'GitHub详细教程' + ',' + 'github,版本控制系统,http协议,代理服务器,版本控制';
+    searchService({
+        index: 'blog',
+        query: searchtitletags,
+        from: 10,
+        size: 10,
+        appendTo: '#res-relatived',
+        url: 'recommend',
+        his: 2,
+        client: "blog_cf_enhance",
+        tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+    });
+
+ </script>   
+
+
+    <div id="ad_cen">
+   
+          <script type="text/javascript">
+              new Ad(4, 'ad_cen');
+          </script>
+    </div>
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list">
+    </div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form">
+    </div>
+
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '9128765';
+    var commentscount = 35;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+    <script type="text/javascript">
+    new Ad(5, 'ad_bot');
+    </script>
+<div id="report_dialog">
+</div>
+
+<div id="d-top"  style="bottom:60px;">
+      
+
+       <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="http://static.blog.csdn.net/images/blog-icon-reply.png" alt="快速回复">
+        </a>    
+
+    <a id="d-top-a" class="btn btn-top backtop"  style="display: none;" title="返回顶部" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])" style="">         
+         <img src="http://static.blog.csdn.net/images/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);
+        
+
+        if($("#comment_content").length>0)
+        {
+            $("#quick-reply").show();
+
+            $("#quick-reply").click(function(){
+                setEditorFocus();
+            });
+        }       
+     
+        var d_top = $('#d-top-a');
+        document.onscroll = function ()
+        {
+            var scrTop = (document.body.scrollTop || document.documentElement.scrollTop);
+            if (scrTop > 500)
+            {
+                d_top.show();
+            } else
+            {
+                d_top.hide();
+            }
+        }
+        $('#d-top-a').click(function ()
+        {
+            scrollTo(0, 0);
+            this.blur();
+            return false;
+        });
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+<div class="tag_list">
+    <h5>
+        <a href="http://www.csdn.net/tag/" target="_blank">核心技术类目</a></h5>
+    <div class="classify">
+<a title="全部主题" href="http://www.csdn.net/tag" target="_blank" onclick="LogClickCount(this,336);">全部主题</a>
+<a title="Hadoop" href="http://g.csdn.net/5272865" target="_blank" onclick="LogClickCount(this,336);">Hadoop</a>
+<a title="AWS" href="http://g.csdn.net/5272866" target="_blank" onclick="LogClickCount(this,336);">AWS</a>
+<a title="移动游戏" href="http://g.csdn.net/5272870" target="_blank" onclick="LogClickCount(this,336);">移动游戏</a>
+<a title="Java" href="http://g.csdn.net/5272871" target="_blank" onclick="LogClickCount(this,336);">Java</a>
+<a title="Android" href="http://g.csdn.net/5272872" target="_blank" onclick="LogClickCount(this,336);">Android</a>
+<a title="iOS" href="http://g.csdn.net/5272873" target="_blank" onclick="LogClickCount(this,336);">iOS</a>
+<a title="Swift" href="http://g.csdn.net/5272868" target="_blank" onclick="LogClickCount(this,336);">Swift</a>
+<a title="智能硬件" href="http://g.csdn.net/5272869" target="_blank" onclick="LogClickCount(this,336);">智能硬件</a>
+<a title="Docker" href="http://g.csdn.net/5272867" target="_blank" onclick="LogClickCount(this,336);">Docker</a>
+<a title="OpenStack" href="http://g.csdn.net/5272925" target="_blank" onclick="LogClickCount(this,336);">OpenStack</a>
+<a title="VPN" href="http://www.csdn.net/tag/vpn" target="_blank" onclick="LogClickCount(this,336);">VPN</a>
+<a title="Spark" href="http://g.csdn.net/5272924" target="_blank" onclick="LogClickCount(this,336);">Spark</a>
+<a title="ERP" href="http://www.csdn.net/tag/erp" target="_blank" onclick="LogClickCount(this,336);">ERP</a>
+<a title="IE10" href="http://www.csdn.net/tag/ie10" target="_blank" onclick="LogClickCount(this,336);">IE10</a>
+<a title="Eclipse" href="http://www.csdn.net/tag/eclipse" target="_blank" onclick="LogClickCount(this,336);">Eclipse</a>
+<a title="CRM" href="http://www.csdn.net/tag/crm" target="_blank" onclick="LogClickCount(this,336);">CRM</a>
+<a title="JavaScript" href="http://www.csdn.net/tag/javascript" target="_blank" onclick="LogClickCount(this,336);">JavaScript</a>
+<a title="数据库" href="http://www.csdn.net/tag/数据库" target="_blank" onclick="LogClickCount(this,336);">数据库</a>
+<a title="Ubuntu" href="http://www.csdn.net/tag/ubuntu" target="_blank" onclick="LogClickCount(this,336);">Ubuntu</a>
+<a title="NFC" href="http://www.csdn.net/tag/nfc" target="_blank" onclick="LogClickCount(this,336);">NFC</a>
+<a title="WAP" href="http://www.csdn.net/tag/wap" target="_blank" onclick="LogClickCount(this,336);">WAP</a>
+<a title="jQuery" href="http://www.csdn.net/tag/jquery" target="_blank" onclick="LogClickCount(this,336);">jQuery</a>
+<a title="BI" href="http://www.csdn.net/tag/bi" target="_blank" onclick="LogClickCount(this,336);">BI</a>
+<a title="HTML5" href="http://www.csdn.net/tag/html5" target="_blank" onclick="LogClickCount(this,336);">HTML5</a>
+<a title="Spring" href="http://www.csdn.net/tag/spring" target="_blank" onclick="LogClickCount(this,336);">Spring</a>
+<a title="Apache" href="http://www.csdn.net/tag/apache" target="_blank" onclick="LogClickCount(this,336);">Apache</a>
+<a title=".NET" href="http://www.csdn.net/tag/.net" target="_blank" onclick="LogClickCount(this,336);">.NET</a>
+<a title="API" href="http://www.csdn.net/tag/api" target="_blank" onclick="LogClickCount(this,336);">API</a>
+<a title="HTML" href="http://www.csdn.net/tag/html" target="_blank" onclick="LogClickCount(this,336);">HTML</a>
+<a title="SDK" href="http://www.csdn.net/tag/sdk" target="_blank" onclick="LogClickCount(this,336);">SDK</a>
+<a title="IIS" href="http://www.csdn.net/tag/iis" target="_blank" onclick="LogClickCount(this,336);">IIS</a>
+<a title="Fedora" href="http://www.csdn.net/tag/fedora" target="_blank" onclick="LogClickCount(this,336);">Fedora</a>
+<a title="XML" href="http://www.csdn.net/tag/xml" target="_blank" onclick="LogClickCount(this,336);">XML</a>
+<a title="LBS" href="http://www.csdn.net/tag/lbs" target="_blank" onclick="LogClickCount(this,336);">LBS</a>
+<a title="Unity" href="http://www.csdn.net/tag/unity" target="_blank" onclick="LogClickCount(this,336);">Unity</a>
+<a title="Splashtop" href="http://www.csdn.net/tag/splashtop" target="_blank" onclick="LogClickCount(this,336);">Splashtop</a>
+<a title="UML" href="http://www.csdn.net/tag/uml" target="_blank" onclick="LogClickCount(this,336);">UML</a>
+<a title="components" href="http://www.csdn.net/tag/components" target="_blank" onclick="LogClickCount(this,336);">components</a>
+<a title="Windows Mobile" href="http://www.csdn.net/tag/windowsmobile" target="_blank" onclick="LogClickCount(this,336);">Windows Mobile</a>
+<a title="Rails" href="http://www.csdn.net/tag/rails" target="_blank" onclick="LogClickCount(this,336);">Rails</a>
+<a title="QEMU" href="http://www.csdn.net/tag/qemu" target="_blank" onclick="LogClickCount(this,336);">QEMU</a>
+<a title="KDE" href="http://www.csdn.net/tag/kde" target="_blank" onclick="LogClickCount(this,336);">KDE</a>
+<a title="Cassandra" href="http://www.csdn.net/tag/cassandra" target="_blank" onclick="LogClickCount(this,336);">Cassandra</a>
+<a title="CloudStack" href="http://www.csdn.net/tag/cloudstack" target="_blank" onclick="LogClickCount(this,336);">CloudStack</a>
+<a title="FTC" href="http://www.csdn.net/tag/ftc" target="_blank" onclick="LogClickCount(this,336);">FTC</a>
+<a title="coremail" href="http://www.csdn.net/tag/coremail" target="_blank" onclick="LogClickCount(this,336);">coremail</a>
+<a title="OPhone " href="http://www.csdn.net/tag/ophone " target="_blank" onclick="LogClickCount(this,336);">OPhone </a>
+<a title="CouchBase" href="http://www.csdn.net/tag/couchbase" target="_blank" onclick="LogClickCount(this,336);">CouchBase</a>
+<a title="云计算" href="http://www.csdn.net/tag/云计算" target="_blank" onclick="LogClickCount(this,336);">云计算</a>
+<a title="iOS6" href="http://www.csdn.net/tag/iOS6" target="_blank" onclick="LogClickCount(this,336);">iOS6</a>
+<a title="Rackspace " href="http://www.csdn.net/tag/rackspace " target="_blank" onclick="LogClickCount(this,336);">Rackspace </a>
+<a title="Web App" href="http://www.csdn.net/tag/webapp" target="_blank" onclick="LogClickCount(this,336);">Web App</a>
+<a title="SpringSide" href="http://www.csdn.net/tag/springside" target="_blank" onclick="LogClickCount(this,336);">SpringSide</a>
+<a title="Maemo" href="http://www.csdn.net/tag/maemo" target="_blank" onclick="LogClickCount(this,336);">Maemo</a>
+<a title="Compuware" href="http://www.csdn.net/tag/compuware" target="_blank" onclick="LogClickCount(this,336);">Compuware</a>
+<a title="大数据" href="http://www.csdn.net/tag/大数据" target="_blank" onclick="LogClickCount(this,336);">大数据</a>
+<a title="aptech" href="http://www.csdn.net/tag/aptech" target="_blank" onclick="LogClickCount(this,336);">aptech</a>
+<a title="Perl" href="http://www.csdn.net/tag/perl" target="_blank" onclick="LogClickCount(this,336);">Perl</a>
+<a title="Tornado" href="http://www.csdn.net/tag/tornado" target="_blank" onclick="LogClickCount(this,336);">Tornado</a>
+<a title="Ruby" href="http://www.csdn.net/tag/ruby" target="_blank" onclick="LogClickCount(this,336);">Ruby</a>
+<a title="Hibernate" href="http://www.csdn.net/hibernate" target="_blank" onclick="LogClickCount(this,336);">Hibernate</a>
+<a title="ThinkPHP" href="http://www.csdn.net/tag/thinkphp" target="_blank" onclick="LogClickCount(this,336);">ThinkPHP</a>
+<a title="HBase" href="http://www.csdn.net/tag/hbase" target="_blank" onclick="LogClickCount(this,336);">HBase</a>
+<a title="Pure" href="http://www.csdn.net/tag/pure" target="_blank" onclick="LogClickCount(this,336);">Pure</a>
+<a title="Solr" href="http://www.csdn.net/tag/solr" target="_blank" onclick="LogClickCount(this,336);">Solr</a>
+<a title="Angular" href="http://www.csdn.net/tag/angular" target="_blank" onclick="LogClickCount(this,336);">Angular</a>
+<a title="Cloud Foundry" href="http://www.csdn.net/tag/cloudfoundry" target="_blank" onclick="LogClickCount(this,336);">Cloud Foundry</a>
+<a title="Redis" href="http://www.csdn.net/tag/redis" target="_blank" onclick="LogClickCount(this,336);">Redis</a>
+<a title="Scala" href="http://www.csdn.net/tag/scala" target="_blank" onclick="LogClickCount(this,336);">Scala</a>
+<a title="Django" href="http://www.csdn.net/tag/django" target="_blank" onclick="LogClickCount(this,336);">Django</a>
+<a title="Bootstrap" href="http://www.csdn.net/tag/bootstrap" target="_blank" onclick="LogClickCount(this,336);">Bootstrap</a>
+    </div>
+</div>
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+            <div id="side">
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/tangbin330" target="_blank">
+    <img src="http://avatar.csdn.net/8/E/E/1_tangbin330.jpg" title="访问我的空间" style="max-width:90%"/>
+    </a>
+    <br />
+    <span><a href="http://my.csdn.net/tangbin330" class="user_name" target="_blank">tangbin330</a></span>
+</div>
+<div class="interact">
+<a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_guanzhu'])"></a>
+<a href="javascript:void(0);" class="letter" onclick="loginto(1)" title="[发私信]" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"></a>
+</div>
+<div id="blog_medal">
+</div>
+<ul id="blog_rank">
+    <li>访问：<span>63731次</span></li>
+    <li>积分：<span>793分</span></li>
+    <li>排名：<span>千里之外</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>38篇</span></li>
+    <li>转载：<span>11篇</span></li>
+    <li>译文：<span>0篇</span></li>
+    <li>评论：<span>43条</span></li>
+</ul>
+</ul>
+</div>
+
+
+<div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字" /></span>
+        <input id="btnSubmit" type="button" value="搜索" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script><div id="custom_column_22111377" class="panel">
+<ul class="panel_head"><span>我的微博</span></ul>
+<ul class="panel_body">
+
+<ul class="panel_body">
+</ul>
+
+</ul>
+</div><div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1199489" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Linux学习笔记</a><span>(5)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1199488" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">C++学习笔记</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/694355" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">算法与数据结构</a><span>(0)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/686786" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">ASP.NET控件使用指南</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/686788" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">ASP.NET编程技巧</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/624769" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">C#随笔</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/688058" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">JavaScript技巧</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/689748" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">数据库</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1292773" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">机器学习</a><span>(5)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1292774" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">自然语言处理</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1358922" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">大数据处理</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1361783" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">其他</a><span>(7)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1374962" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">数学基础</a><span>(6)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1456909" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">python</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tangbin330/article/category/1473703" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">PHP</a><span>(2)</span>
+            </li>
+</ul>
+</div><div id="panel_Archive" class="panel">
+<ul class="panel_head"><span>文章存档</span></ul>
+<ul class="panel_body">
+<div id="archive_list">
+<!--归档统计-->
+<li><a href="http://blog.csdn.net/tangbin330/article/month/2013/06">2013年06月</a><span>(10)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2013/04">2013年04月</a><span>(7)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2013/03">2013年03月</a><span>(15)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2012/08">2012年08月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2012/07">2012年07月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2011/06">2011年06月</a><span>(3)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2010/07">2010年07月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2010/06">2010年06月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2010/05">2010年05月</a><span>(8)</span></li><li><a href="http://blog.csdn.net/tangbin330/article/month/2009/12">2009年12月</a><span>(1)</span></li>
+</div>
+</ul>
+</div>
+<div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+阅读排行    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="/tangbin330/article/details/9128765" title="GitHub详细教程">GitHub详细教程</a><span>(36151)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/6526413" title="异常----- 异常来自 HRESULT:0x800736B1">异常----- 异常来自 HRESULT:0x800736B1</a><span>(4527)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8654770" title="使用Bundle进行VIM插件的管理">使用Bundle进行VIM插件的管理</a><span>(3247)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8692222" title="贝叶斯分类">贝叶斯分类</a><span>(1312)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8629198" title="C++内存分配及字符串赋值">C++内存分配及字符串赋值</a><span>(1218)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8645567" title="MPI入门实例讲解">MPI入门实例讲解</a><span>(1198)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8668881" title="决策树算法">决策树算法</a><span>(1112)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8805152" title="python读取CSV文件">python读取CSV文件</a><span>(994)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/5616804" title="SuperAuthenticationCode验证码控件的使用">SuperAuthenticationCode验证码控件的使用</a><span>(885)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/9127467" title="使用gist管理代码">使用gist管理代码</a><span>(841)</span>
+</li>
+</ul>
+</div>
+<div id="hotarticls2" class="panel">
+<ul class="panel_head"><span>评论排行</span></ul>
+<ul class="panel_body itemlist">
+<li>
+<a href="/tangbin330/article/details/9128765" title="GitHub详细教程">GitHub详细教程</a><span>(34)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/5616804" title="SuperAuthenticationCode验证码控件的使用">SuperAuthenticationCode验证码控件的使用</a><span>(3)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8654770" title="使用Bundle进行VIM插件的管理">使用Bundle进行VIM插件的管理</a><span>(3)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8627443" title="Google Custom Search API的使用">Google Custom Search API的使用</a><span>(1)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8629198" title="C++内存分配及字符串赋值">C++内存分配及字符串赋值</a><span>(1)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8747420" title="多项分布">多项分布</a><span>(0)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8746937" title="泊松分布">泊松分布</a><span>(0)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8746692" title="二项分布">二项分布</a><span>(0)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8742600" title="信息检索和网络数据挖掘领域论文技术基础">信息检索和网络数据挖掘领域论文技术基础</a><span>(0)</span>
+</li>
+<li>
+<a href="/tangbin330/article/details/8717258" title="极大似然估计">极大似然估计</a><span>(0)</span>
+</li>
+</ul>
+</div>
+<div id="homepageArticles" class="panel tracking-ad" data-mod="popu_4">
+<ul class="panel_head"><span>推荐文章</span></ul>
+<ul class="panel_body" id="ad_commend"></ul>
+</div>
+<script type="text/javascript">
+ new Ad(12, 'ad_commend');
+</script><div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/magoolau" class="user_name">magoolau</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/bulbasaur" class="user_name">bulbasaur</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/solebeibei" class="user_name">solebeibei</a>:
+m
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/caiyangcaitou" class="user_name">caiyangcaitou</a>:
+不错  mark一下
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/u012450176" class="user_name">u012450176</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/q644744615" class="user_name">q644744615</a>:
+mark，留着以后查，很详细的教程，谢谢分享
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/zldeng_scir" class="user_name">zldeng_scir</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/csm_qz" class="user_name">csm_qz</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/chenchenlfj" class="user_name">chenchenlfj</a>:
+mark
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tangbin330/article/details/9128765#comments">GitHub详细教程</a>
+    <p style="margin:0px;"><a href="/bjwtufv" class="user_name">bjwtufv</a>:
+mark
+    </p>
+    </li>
+</ul>
+</div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+            <div class="clear">
+            </div>
+        </div>
+        
+
+<script type="text/javascript" src="http://csdnimg.cn/rabbit/cnick/cnick.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="http://medal.blog.csdn.net/showblogmedal.ashx?blogid=496138"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/publib_footer.js?' + Math.floor(new Date() / 120000).toString(36) + '="></' + 'script>');
+</script>
+    <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+<script type="text/javascript" src="http://ad.csdn.net/scripts/ad-blog.js"></script>
+<script type="text/javascript" src="http://zz.csdn.net/js/count.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a>"
+                    + "<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+    });
+</script>
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://static.csdn.net/public/common/toolbar/js/toolbar.js"></script>     <!--new top-->
+</body>
+</html>
